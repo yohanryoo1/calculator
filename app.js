@@ -1,3 +1,3 @@
-// FIRST DRAFT
+// DRAFT
 
 //1. register input 
