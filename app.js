@@ -3,6 +3,7 @@
 //compute every time an operator button is clicked too, showing calculations along the way. 
 //edge cases: trim NaN values on the sides of final string before compututing
 //once a decimal point is pressed deactivate it // or get rid of double decimal points via regex?
+//there's a wierd bug when pressing decimal point first 
 
 const numButtons = document.querySelectorAll('.num');
 const operatorButtons = document.querySelectorAll('.operator');
@@ -13,6 +14,7 @@ const clearEntry = document.getElementById('clear-entry');
 
 let entry = [];
 let toCompute = [];
+screen.value = 0;
 
 function placeEntry(el) {
     entry.push(el.textContent);
@@ -60,10 +62,10 @@ equals.addEventListener('click', () => {
 allClear.addEventListener('click', () => {
     toCompute = [];
     entry = [];
-    screen.value = '';
+    screen.value = 0;
 })
 
 clearEntry.addEventListener('click', () => {
     entry = [];
-    screen.value = '';
+    screen.value = 0;
 })
