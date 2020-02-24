@@ -36,6 +36,10 @@ h1 {
     grid-row-gap: 15px;
 }
 
+.disable {
+    visibility: hidden;
+}
+
 button {
     width: 100%;
     padding: 5px 0;
@@ -81,7 +85,7 @@ input {
     font-size: 3em;
 
     direction: RTL;
-    //text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 
 input:hover {
@@ -92,6 +96,6 @@ input:focus {
     outline: 0;
 }
 
-.large {
+#large {
     grid-row: span 2;
 }
